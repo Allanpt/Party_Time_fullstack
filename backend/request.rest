@@ -1,0 +1,58 @@
+### Services
+
+POST http://localhost:3000/api/services
+Content-Type: application/json
+
+{
+    "name": "Serviço A",
+    "description": "Serviço A descrição",
+    "price": 2000,
+    "image": "https://images.unsplash.com/photo-1682685795463-0674c065f315?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHx8"
+}
+
+###
+GET http://localhost:3000/api/services
+
+###
+GET http://localhost:3000/api/services/65425eabece001f046eca621
+
+###
+DELETE  http://localhost:3000/api/services/65425eabece001f046eca620
+
+###
+PUT  http://localhost:3000/api/services/654261c3bdd21339ff98ba15
+Content-Type: application/json
+
+{
+    "name": "Malabarista",
+    "description": "O malabarista flexível",
+    "price": 2000,
+    "image": "https://images.unsplash.com/photo-1682685795463-0674c065f315?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHx8"
+}
+### Party
+
+POST http://localhost:3000/api/party
+Content-Type: application/json
+
+{
+    "title": "Festa de Aniverssário",
+    "author": "Allan",
+    "description": "Festa no condomínio",
+    "budget": 5000,
+    "image": "https://images.unsplash.com/photo-1682685795463-0674c065f315?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHx8",
+    "services": [
+        {
+            "name": "Calistenics",
+            "description": "O calistenic flexível",
+            "price": 7000,
+            "image": "https://images.unsplash.com/photo-1682685795463-0674c065f315?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHx8"
+
+        }
+    ]
+}
+
+###
+GET http://localhost:3000/api/party
+
+###
+GET http://localhost:3000/api/party/6550ca56185337b3a0a30078
