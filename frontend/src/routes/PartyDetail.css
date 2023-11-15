@@ -1,0 +1,61 @@
+#party-detail{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+#party-detail h1, #party-detail .action-container, #party-detail p, #party-detail h3{
+    align-self: center;
+}
+#party-detail .services-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 15px;
+}
+#party-detail .services-container img{
+    max-width: 300px;
+    height: 200px;
+    object-fit: cover;
+}
+#party-detail .action-container{
+    display: flex;
+    gap: 20px;
+}
+#party-detail .action-container .edit-btn{
+    background-color: rgb(76, 43, 226);
+    border: none;
+    border-radius: 0.5rem;
+    padding: 10px 15px;
+    color: white;
+    transition: 0.2s;
+    cursor: pointer;
+    font-weight: bold;
+}
+#party-detail .action-container .edit-btn:hover{
+    background-color: rgb(76, 43, 226, 0.8);
+}
+
+#party-detail .action-container .delete-btn{
+    border: 1px solid rgb(85, 80, 80, 0.5);
+    padding: 5px 0;
+    border-radius: 0.5rem;
+    transition: 0.2s;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#party-detail .action-container .delete-btn:hover{
+    background-color: rgba(226, 43, 43);
+    color: white;
+}
+#party-detail p{
+    color: rgb(85, 80, 80);
+    text-align: center;
+}
+#party-detail .details{
+    display: flex;
+    margin-top: 15px;
+    justify-content: space-evenly;
+}
+

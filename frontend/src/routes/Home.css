@@ -1,0 +1,35 @@
+.home h1{
+    text-align: center;
+    margin-bottom: 30px
+}
+.home .parties-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 0 30px;
+}
+.home .parties-container img{
+    max-width: 270px;
+    height: 270px;
+}
+.home .parties-container .party{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.party .btn-second{
+    max-width: 120px;
+    text-align: center;
+    border: 1px solid rgb(85, 80, 80, 0.5);
+    margin-top: 15px;
+    padding: 5px 0;
+    border-radius: 0.5rem;
+    transition: 0.2s;
+}
+.party .btn-second:hover{
+    border: 1px solid rgb(85, 80, 80);
+    
+}
+.party h3{
+    text-align: center;
+}
